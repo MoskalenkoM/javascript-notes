@@ -1,4 +1,4 @@
-// Example dynamic typing.
+// Examples of dynamic typing.
 // Примеры динамической типизации.
 
 let a; // неявное присваивание значения undefined
