@@ -1,32 +1,36 @@
-// Example weak typing.
-// Примеры слабой типизации.
+// Examples of weak typing.
 
-// '==' or '!=' - non-strict comparison operators
-// '===' or '!==' - strict comparison operators
+// '==' or '!='     ---> non-strict comparison operators
+// '===' or '!=='   ---> strict comparison operators
 
-let a = 1;
-let b = '1';
+let a = 1; // number
+let b = 1; // number
+
+console.log(a == b); // true
+console.log(a === b); // true
+
+a = 2; // number
+b = '2'; // string
 
 console.log(a == b); // true
 console.log(a === b); // false
 
-a = true;
-b = 1;
+a = true; // boolean
+b = 1; // number
 
 console.log(a == b); // true
 console.log(a === b); // false
 
-// объекты сравниваются по ссылке, а не по значению
 // objects are compared by reference, not by value
 
-a = { name: 'Max' };
-b = { name: 'Max' };
+a = { name: 'Max' }; // object
+b = { name: 'Max' }; // object
 
 console.log(a == b); // false
 console.log(a === b); // false
 
-a = { name: 'JavaScript' };
-b = a;
+a = { name: 'JavaScript' }; // object
+b = a; // object
 
 console.log(a == b); // true
 console.log(a === b); // true
